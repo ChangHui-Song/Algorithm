@@ -1,5 +1,7 @@
 import sys
 
+# 평균, 중간값, 최빈값, 범위
+
 if __name__ == "__main__":
 	n = int(sys.stdin.readline())
 	tmp = list(0 for _ in range(8001))

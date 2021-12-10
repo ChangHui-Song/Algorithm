@@ -1,5 +1,7 @@
 import sys
 
+# 조합
+
 if __name__ == "__main__":
 	n, m = map(int, sys.stdin.readline().split())
 	arr = list(map(int, sys.stdin.readline().split()))

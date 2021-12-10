@@ -1,5 +1,7 @@
 import sys
 
+# 다중 기준 정렬
+
 if __name__ == "__main__":
 	n = int(sys.stdin.readline())
 	words = []

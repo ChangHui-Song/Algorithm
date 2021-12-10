@@ -1,5 +1,7 @@
 import sys
 
+# 소수 찾기
+
 if __name__ == "__main__":
 	n, m = map(int, sys.stdin.readline().split())
 

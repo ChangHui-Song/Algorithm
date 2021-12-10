@@ -1,5 +1,7 @@
 import sys
 
+# brote force
+
 class Board_Check:
 	def __init__(self):
 		self.first_w_board = [

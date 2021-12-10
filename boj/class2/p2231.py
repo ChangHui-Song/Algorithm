@@ -1,5 +1,7 @@
 import sys
 
+# 분해합
+
 if __name__ == "__main__":
 	n = int(sys.stdin.readline())
 	answer = 0

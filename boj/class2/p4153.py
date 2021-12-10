@@ -1,5 +1,7 @@
 import sys
 
+# 피타고리스 정리
+
 if __name__ == "__main__":
 	while True:
 		arr = list(map(int, sys.stdin.readline().split()))

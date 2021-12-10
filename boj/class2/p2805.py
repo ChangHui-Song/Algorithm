@@ -1,5 +1,7 @@
 import sys
 
+# 이분 탐색
+
 if __name__ == "__main__":
 	n, m = map(int, sys.stdin.readline().split())
 	tree = list(map(int, sys.stdin.readline().split()))
