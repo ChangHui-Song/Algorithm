@@ -6,10 +6,13 @@ graph = {
   1: [2, 3, 4],
   2: [5],
   3: [5],
-  4: [],
+  4: [9, 10],
   5: [6, 7],
   6: [],
   7: [3],
+  9: [],
+  10: [11],
+  11: []
 }
 
 def iterative_dfs(start_v):
@@ -17,6 +20,7 @@ def iterative_dfs(start_v):
   stack = [start_v]
   while stack:
     v = stack.pop()
+    print('stack', stack, v)
     if v not in discovered:
       discovered.append(v)
       for w in graph[v]:
@@ -27,7 +31,6 @@ def recursive_dfs(v, discovered=[]):
   discovered.append(v)
   for w in graph[v]:
     if w not in discovered:
-      print(discovered)
       discovered = recursive_dfs(w, discovered)
   return discovered
 
@@ -42,5 +45,4 @@ def iterative_bfs(start_v):
         queue.append(w)
   return discovered
 
-print(recursive_dfs(1))
 print(iterative_dfs(1))
