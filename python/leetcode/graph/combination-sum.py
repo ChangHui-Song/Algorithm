@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
         result = []
@@ -11,6 +14,6 @@ class Solution:
 
             for i in range(index, len(candidates)):
                 dfs(csum - candidates[i], i, path + [candidates[i]])
-        
+
         dfs(target, 0, [])
         return result
