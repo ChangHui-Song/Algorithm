@@ -17,6 +17,9 @@ class Solution:
             if not node:
                 return 0
 
+            dfs(node.left)
+            dfs(node.right)
+
             if node.left and node.left.val == node.val:
                 left += 1
             else:
@@ -25,7 +28,7 @@ class Solution:
                 right += 1
             else:
                 right = 0
-            self.longest = max(self.longest, left + right + 2)
-            return max(left, right) + 1
+            self.longest = max(self.longest, left + right)
+            return max(left, right)
         dfs(root)
         return self.longest
