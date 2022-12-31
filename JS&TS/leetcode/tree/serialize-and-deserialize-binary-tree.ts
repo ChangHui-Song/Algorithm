@@ -16,7 +16,7 @@ class TreeNode {
 function serialize(root: TreeNode | null): string {
   if (!root) return '';
   const queue: (TreeNode | null)[] = [root];
-  const result: string[] = [];
+  const result: (string | null)[] = [];
 
   while (queue.length !== 0) {
     const node = queue.shift();
