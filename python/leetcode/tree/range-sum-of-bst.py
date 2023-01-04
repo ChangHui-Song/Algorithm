@@ -20,3 +20,5 @@ class Solution:
                 return dfs(node.left)
 
             return node.val + dfs(node.left) + dfs(node.right)
+
+        return dfs(root)
