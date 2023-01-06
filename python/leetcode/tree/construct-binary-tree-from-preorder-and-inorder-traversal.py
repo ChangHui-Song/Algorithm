@@ -14,8 +14,8 @@ class Solution:
             return None
 
         index = inorder.index(preorder[0])
-
         node = TreeNode(inorder[index])
+
         node.left = self.buildTree(preorder[1 : index + 1], inorder[: index + 1])
         node.right = self.buildTree(preorder[index + 1 :], inorder[index + 1 :])
 
