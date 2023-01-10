@@ -2,3 +2,5 @@ test*
 input*
 node_module/
 
+# 어려운 문제
+palindrome-pairs.*
