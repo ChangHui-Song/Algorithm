@@ -6,11 +6,13 @@ class Solution:
         if sum(gas) < sum(cost):
             return -1
 
-        start, fuel = 0, 0
+        start = 0
+        total = 0
         for i in range(len(gas)):
-            if gas[i] + fuel < cost[i]:
+            total += gas[i] + cost[i]
+
+            if total < 0:
                 start = i + 1
-                fuel = 0
-            else:
-                fuel += gas[i] - cost[i]
+                total = 0
+        
         return start
