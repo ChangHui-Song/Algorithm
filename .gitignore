@@ -1,6 +1,5 @@
-test*
-input*
-node_module/
+.vscode/
+node_modules/
 
 # 어려운 문제
 palindrome-pairs.*
