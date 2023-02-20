@@ -11,6 +11,7 @@ describe(' description', () => {
   test('example test 2', () => {
     const output = productExceptSelf([-1, 1, 0, -3, 3]);
     const expected = [0, 0, 9, 0, 0];
-    output.forEach((num, i) => expect(num).toBeCloseTo(expected[i]));
+
+    output.forEach((num, i) => expect(num === expected[i]).toEqual(true));
   });
 });
