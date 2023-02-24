@@ -1,19 +1,6 @@
 import { describe, expect, test } from '@jest/globals';
-import { mergeTwoLists, ListNode } from '.';
-
-const convertArrayToList = (array: number[]): ListNode | null => {
-  if (!array) return null;
-
-  const head = new ListNode(-1);
-  let prev = head;
-
-  for (let i = 0; i < array.length; i++) {
-    prev.next = new ListNode(array[i]);
-    prev = prev.next;
-  }
-
-  return head.next;
-};
+import { mergeTwoLists } from '.';
+import { convertArrayToList, ListNode } from '../utils';
 
 describe(' description', () => {
   test('example test 1', () => {
