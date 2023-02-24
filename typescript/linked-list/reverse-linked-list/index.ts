@@ -6,7 +6,7 @@ export function reverseList(head: ListNode | null): ListNode | null {
     if (!node) return prev;
 
     const next = node.next;
-    node = prev;
+    node.next = prev;
 
     return reverse(next, node);
   };
