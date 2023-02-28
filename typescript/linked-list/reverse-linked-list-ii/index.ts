@@ -15,10 +15,10 @@ export function reverseBetween(
   const end = start.next;
 
   for (let i = 0; i < right - left; i++) {
-    const tmp = start.next;
-    start.next = end.next;
-    end.next = end.next.next;
-    start.next.next = tmp;
+    const tmp = end.next;
+    end.next = tmp.next;
+    tmp.next = start.next;
+    start.next = tmp;
   }
 
   return root.next;
