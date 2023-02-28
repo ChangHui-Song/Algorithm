@@ -8,7 +8,7 @@
     "allowSyntheticDefaultImports": true,
     "target": "es2019",
     "sourceMap": true,
-    "rootDir": "./",
+    "baseUrl": "./",
     "outDir": "dist",
     "incremental": true,
     "skipLibCheck": true,
