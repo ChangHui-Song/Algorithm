@@ -8,7 +8,7 @@
     "allowSyntheticDefaultImports": true,
     "target": "es2019",
     "sourceMap": true,
-    "baseUrl": "./",
+    "baseUrl": "./stack",
     "outDir": "dist",
     "incremental": true,
     "skipLibCheck": true,

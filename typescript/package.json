@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "jest --config jest.config.js --passWithNoTests --detectOpenHandles --forceExit",
-    "test:watch": "jest --config jest.config.js --passWithNoTests --detectOpenHandles --watchAll"
+    "test": "jest",
+    "test:watch": "jest --watchAll"
   },
   "devDependencies": {
     "@jest/globals": "^29.4.2",
