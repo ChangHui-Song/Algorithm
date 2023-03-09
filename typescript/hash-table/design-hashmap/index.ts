@@ -40,13 +40,14 @@ export class MyHashMap {
   get(key: number): number {
     const index = key % this.size;
 
-    if (this.table[index]?.key === key) return this.table[index].value;
+    if (!this.table[index]) return -1;
 
     let node = this.table[index];
-    while (node && node.key !== key) {
+    while (node) {
+      if (node.key === key) return node.value;
       node = node.next;
     }
-    return node?.key === key ? node.value : -1;
+    return -1;
   }
 
   remove(key: number): void {
