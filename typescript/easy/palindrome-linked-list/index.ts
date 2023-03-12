@@ -1,4 +1,4 @@
-import { ListNode } from '../utils';
+import { ListNode } from '../../utils';
 
 export function isPalindrome(head: ListNode | null): boolean {
   let reverseList = null;

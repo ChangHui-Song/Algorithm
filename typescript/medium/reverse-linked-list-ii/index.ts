@@ -1,4 +1,4 @@
-import { convertArrayToList, ListNode } from '../utils';
+import { convertArrayToList, ListNode } from '../../utils';
 
 export function reverseBetween(
   head: ListNode | null,

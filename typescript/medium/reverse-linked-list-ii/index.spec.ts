@@ -1,5 +1,5 @@
 import { reverseBetween } from '.';
-import { convertArrayToList } from '../utils';
+import { convertArrayToList } from '../../utils';
 
 describe(' description', () => {
   test('example test 1', () => {

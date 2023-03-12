@@ -1,4 +1,4 @@
-import { convertArrayToList, ListNode } from '../utils';
+import { convertArrayToList, ListNode } from '../../utils';
 import { mergeKLists } from '.';
 
 describe(' description', () => {

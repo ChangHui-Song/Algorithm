@@ -1,6 +1,6 @@
 import { describe, expect, test } from '@jest/globals';
 import { isPalindrome } from '.';
-import { ListNode, convertArrayToList } from '../utils';
+import { ListNode, convertArrayToList } from '../../utils';
 
 describe(' description', () => {
   test('example test 1', () => {

@@ -1,4 +1,4 @@
-import { ListNode } from '../utils';
+import { ListNode } from '../../utils';
 
 export function mergeKLists(lists: Array<ListNode | null>): ListNode | null {
   if (!lists) return null;
