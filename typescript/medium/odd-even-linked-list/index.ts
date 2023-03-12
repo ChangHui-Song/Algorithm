@@ -1,4 +1,4 @@
-import { ListNode } from '../utils';
+import { ListNode } from '../../utils';
 
 export function oddEvenList(head: ListNode | null): ListNode | null {
   if (!head) return head;

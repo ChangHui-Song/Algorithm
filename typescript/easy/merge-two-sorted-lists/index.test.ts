@@ -1,6 +1,6 @@
 import { describe, expect, test } from '@jest/globals';
 import { mergeTwoLists } from '.';
-import { convertArrayToList, ListNode } from '../utils';
+import { convertArrayToList, ListNode } from '../../utils';
 
 describe(' description', () => {
   test('example test 1', () => {

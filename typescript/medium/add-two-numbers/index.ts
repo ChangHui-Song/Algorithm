@@ -1,4 +1,4 @@
-import { ListNode } from '../utils';
+import { ListNode } from '../../utils';
 
 export function addTwoNumbers(
   l1: ListNode | null,

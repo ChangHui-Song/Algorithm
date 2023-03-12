@@ -1,6 +1,6 @@
 import { describe, expect, test } from '@jest/globals';
 import { swapPairs } from '.';
-import { convertArrayToList } from '../utils';
+import { convertArrayToList } from '../../utils';
 
 describe(' description', () => {
   test('example test 1', () => {
