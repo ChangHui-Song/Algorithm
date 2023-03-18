@@ -20,3 +20,10 @@ export const convertArrayToList = (array: number[]): ListNode | null => {
 
   return head.next;
 };
+
+export function expectAnyOrder<T>(arr: T[][]): T[][] {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = expect.arrayContaining(arr[i]);
+  }
+  return arr;
+}
