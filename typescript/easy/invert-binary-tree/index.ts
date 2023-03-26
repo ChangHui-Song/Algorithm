@@ -1,19 +1,12 @@
 import { TreeNode } from '../../utils';
 
 export function invertTree(root: TreeNode | null): TreeNode | null {
-  const stack: TreeNode[] = [root];
+  if (!root) return null;
 
-  while (stack.length) {
-    const node = stack.pop();
+  const { left, right } = root;
 
-    if (node) {
-      const tmp = node.left;
-      node.left = node.right;
-      node.right = tmp;
-
-      stack.push(node.left, node.right);
-    }
-  }
+  root.right = invertTree(left);
+  root.left = invertTree(right);
 
   return root;
 }
