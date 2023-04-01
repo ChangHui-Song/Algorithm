@@ -43,11 +43,11 @@ export const convertArrayToTree = (
 
   while (queue.length) {
     const subRoot = queue.shift();
-    if (array[2 * index + 1]) {
+    if (array[2 * index + 1] != null) {
       subRoot.left = new TreeNode(array[2 * index + 1]);
       queue.push(subRoot.left);
     }
-    if (array[2 * index + 2]) {
+    if (array[2 * index + 2] != null) {
       subRoot.right = new TreeNode(array[2 * index + 2]);
       queue.push(subRoot.right);
     }
